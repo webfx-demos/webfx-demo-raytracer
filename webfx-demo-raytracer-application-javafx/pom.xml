@@ -61,4 +61,27 @@
         </dependency>
     
     </dependencies>
+
+    <profiles>
+        <!-- profile to make a fat standalone executable jar with all dependent libraries included inside -->
+        <profile>
+            <id>javafx-fatjar</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+
+            <build>
+                <plugins>
+
+                    <!-- Calling Shade with the configuration defined in the parent pom -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-shade-plugin</artifactId>
+                    </plugin>
+
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
 </project>
