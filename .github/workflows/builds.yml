@@ -114,6 +114,13 @@ jobs:
           repository: 'webfx-project/webfx'
           path: ${{ env.webfx-module }}
 
+      # Checkout Mandelbrot repository (we need to build it as well because there is no release yet)
+      - name: Checkout WebFx repository
+        uses: actions/checkout@v2
+        with:
+          repository: 'webfx-project/webfx-demo-mandelbrot'
+          path: ./webfx-demo-mandelbrot
+
       # Set up the JDK (WebFx requires JDK13+ due to javac bugs in prior versions - otherwise JDK11+ should be enough in theory)
       - name: Set up JDK ${{ env.jdk-version }}
         uses: actions/setup-java@v1
@@ -147,6 +154,11 @@ jobs:
       - name: Build WebFx with JDK ${{ env.jdk-version }} (Java 11 target)
         run: mvn -P '!gwt-compile' install
         working-directory: ${{ env.webfx-module }}
+
+      # Building the latest Mandelbrot demo version locally (since there is no public release yet)
+      - name: Build Mandelbrot demo (due to dependency)
+        run: mvn -P '!gwt-compile' install
+        working-directory: ./webfx-demo-mandelbrot
 
       # Building this repository with JDK 13+ (Java 11 target) including a GWT compilation (if required)
       - if: matrix.web-artifact-suffix != null
