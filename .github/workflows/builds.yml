@@ -76,7 +76,8 @@ jobs:
       dep-repo-1: 'webfx-project/webfx-parent'
       dep-repo-2: 'webfx-project/webfx-lib-javacupruntime'
       dep-repo-3: 'webfx-project/webfx'
-      dep-repo-4: 'webfx-project/webfx-demo-mandelbrot'
+      dep-repo-4: 'webfx-project/webfx-lib-odometer'
+      dep-repo-5: 'webfx-project/webfx-demo-mandelbrot'
       app-name:  ${{ matrix.app.name }}
       app-repo-dir:              .
       app-parent-module-dir:     .
@@ -171,6 +172,17 @@ jobs:
       - name: Build dependent repository 4
         run: mvn -B -P '!gwt-compile,!javafx-fatjar,!javapackager' install
         working-directory: 'dep-repo-4'
+
+      # Dependent Repository 5
+      - name: Checkout dependent repository 5
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ env.dep-repo-5 }}
+          path: 'dep-repo-5'
+
+      - name: Build dependent repository 5
+        run: mvn -B -P '!gwt-compile,!javafx-fatjar,!javapackager' install
+        working-directory: 'dep-repo-5'
 
 
       ##################################################################################################################
