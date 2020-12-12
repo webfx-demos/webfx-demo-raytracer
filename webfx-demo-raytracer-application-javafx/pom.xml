@@ -65,7 +65,7 @@
     <properties>
         <plugin.javapackager.name>RayTracer</plugin.javapackager.name>
         <plugin.javapackager.displayName>Ray Tracer</plugin.javapackager.displayName>
-        <plugin.javapackager.url>https://webfx-raytracer-demo.netlify.app</plugin.javapackager.url>
+        <plugin.javapackager.url>https://raytracer.webfx-project.org</plugin.javapackager.url>
     </properties>
 
     <build>
