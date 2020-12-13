@@ -18,7 +18,7 @@ such as web workers and WebAssembly modules, which can be useful for application
 WebFx can interact with third-party web workers and WebAssembly modules or you can write your own in Java.
 In this demo, they are written in Java and compiled with [TeaVM][teavm-website].
 
-[demo-live-link]: https://raytracer.webfx-project.org
+[demo-live-link]: https://raytracer.webfx.dev
 [demo-mandelbrot-repo]: https://github.com/webfx-project/webfx-demo-mandelbrot
 [raytracer-computation-source]: https://github.com/steventrowland/JavaFX-Ray-Tracer
 [teavm-website]: http://teavm.org/
