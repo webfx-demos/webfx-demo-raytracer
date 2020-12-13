@@ -10,6 +10,6 @@ module webfx.demo.raytracer.webworker {
     requires webfx.platform.shared.webworker;
 
     // Exported packages
-    exports webfx.demo.raytracer.webworker;
+    exports dev.webfx.demo.raytracer.webworker;
 
 }

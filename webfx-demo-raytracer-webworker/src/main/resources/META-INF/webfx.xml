@@ -4,7 +4,7 @@
         <![CDATA[
 [
   {
-    "name" : "webfx.demo.raytracer.webworker.RayTracerWebWorker",
+    "name" : "dev.webfx.demo.raytracer.webworker.RayTracerWebWorker",
     "methods" : [
       { "name" : "<init>", "parameterTypes" : [] }
     ]

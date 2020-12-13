@@ -6,6 +6,6 @@ module webfx.demo.raytracer.math {
     requires java.base;
 
     // Exported packages
-    exports webfx.demo.raytracer.math;
+    exports dev.webfx.demo.raytracer.math;
 
 }

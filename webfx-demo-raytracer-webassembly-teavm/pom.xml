@@ -24,7 +24,7 @@
     </dependencies>
 
     <properties>
-        <plugin.teavm.param.mainClass>webfx.demo.raytracer.webassembly.teavm.TeaVmRayTracerWebAssemblyEntryPoints</plugin.teavm.param.mainClass>
+        <plugin.teavm.param.mainClass>dev.webfx.demo.raytracer.webassembly.teavm.TeaVmRayTracerWebAssemblyEntryPoints</plugin.teavm.param.mainClass>
         <plugin.teavm.param.targetType>WEBASSEMBLY</plugin.teavm.param.targetType>
     </properties>
 

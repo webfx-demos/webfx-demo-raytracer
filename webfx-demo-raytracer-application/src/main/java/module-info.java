@@ -10,9 +10,9 @@ module webfx.demo.raytracer.application {
     requires webfx.platform.shared.json;
 
     // Exported packages
-    exports webfx.demo.raytracer;
+    exports dev.webfx.demo.raytracer;
 
     // Provided services
-    provides javafx.application.Application with webfx.demo.raytracer.RayTracerApplication;
+    provides javafx.application.Application with dev.webfx.demo.raytracer.RayTracerApplication;
 
 }
