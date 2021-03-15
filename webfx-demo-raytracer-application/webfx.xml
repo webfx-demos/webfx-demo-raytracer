@@ -6,7 +6,7 @@
     </packages>
 
     <providers>
-        <provider spi="javafx.application.Application">dev.webfx.demo.raytracer.RayTracerApplication</provider>
+        <javafx.application.Application>dev.webfx.demo.raytracer.RayTracerApplication</javafx.application.Application>
     </providers>
 
     <dependencies>
