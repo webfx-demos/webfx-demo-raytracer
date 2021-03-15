@@ -9,4 +9,8 @@
         <provider spi="javafx.application.Application">dev.webfx.demo.raytracer.RayTracerApplication</provider>
     </providers>
 
+    <dependencies>
+        <source-modules/>
+    </dependencies>
+
 </module>
