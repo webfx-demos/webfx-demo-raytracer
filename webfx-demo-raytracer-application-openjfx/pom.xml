@@ -82,7 +82,7 @@
     <profiles>
         <!-- profile to make a fat standalone executable jar with all dependent libraries included inside -->
         <profile>
-            <id>javafx-fatjar</id>
+            <id>openjfx-fatjar</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
