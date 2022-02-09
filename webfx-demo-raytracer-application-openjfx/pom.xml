@@ -7,7 +7,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>webfx-demo-raytracer-application-javafx</artifactId>
+    <artifactId>webfx-demo-raytracer-application-openjfx</artifactId>
 
 
 
@@ -21,7 +21,7 @@
     
         <dependency>
             <groupId>dev.webfx</groupId>
-            <artifactId>webfx-kit-javafx</artifactId>
+            <artifactId>webfx-kit-openjfx</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>
     
