@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+
+    <parent name="webfx-stack-platform"/>
+
+    <modules>
+        <module>webfx-demo-raytracer-math</module>
+        <module>webfx-demo-raytracer-webworker</module>
+        <module>webfx-demo-raytracer-webworker-teavm</module>
+        <module>webfx-demo-raytracer-webassembly-teavm</module>
+        <module>webfx-demo-raytracer-application</module>
+        <module>webfx-demo-raytracer-application-openjfx</module>
+        <module>webfx-demo-raytracer-application-gwt</module>
+        <module>webfx-demo-raytracer-application-gluon</module>
+    </modules>
+
+    <required-libraries>
+            <library artifact="dev.webfx:webfx-demo-mandelbrot:0.1.0-SNAPSHOT"/>
+    </required-libraries>
+
+</project>
