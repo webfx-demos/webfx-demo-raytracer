@@ -27,7 +27,7 @@ public class RayTracerWebWorker extends JavaCodedWebWorkerBase {
     public void onLoaded() {
         if (WebAssembly.isSupported()) {
             Future<WebAssemblyInstance> future = WebAssembly.loadAndInstantiate("classes.wasm");
-            future.setHandler(ar -> {
+            future.onComplete(ar -> {
                 webAssemblyInstance = ar.result();
                 outputBufferReader = webAssemblyInstance.getDataReader(0);
             });
