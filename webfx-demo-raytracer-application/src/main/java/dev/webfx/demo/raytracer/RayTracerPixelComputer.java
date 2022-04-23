@@ -1,9 +1,9 @@
 package dev.webfx.demo.raytracer;
 
 import javafx.scene.paint.Color;
-import dev.webfx.demo.mandelbrot.tracerframework.PixelComputer;
-import dev.webfx.demo.mandelbrot.tracerframework.TracerThumbnail;
-import dev.webfx.demo.mandelbrot.tracerframework.TracerEngine;
+import dev.webfx.lib.tracerframework.PixelComputer;
+import dev.webfx.lib.tracerframework.TracerThumbnail;
+import dev.webfx.lib.tracerframework.TracerEngine;
 import dev.webfx.demo.raytracer.math.RayTracerMath;
 import dev.webfx.demo.raytracer.math.Views;
 import dev.webfx.demo.raytracer.webworker.RayTracerWebWorker;
