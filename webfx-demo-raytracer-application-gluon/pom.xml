@@ -13,6 +13,8 @@
 
     <artifactId>webfx-demo-raytracer-application-gluon</artifactId>
 
+    <name>WebFXDemoRaytracer</name>
+
     <dependencies>
 
         <dependency>

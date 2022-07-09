@@ -66,8 +66,8 @@
     </dependencies>
 
     <properties>
-        <plugin.javapackager.name>webfx-demo-raytracer</plugin.javapackager.name>
-        <plugin.javapackager.displayName>webfx-demo-raytracer</plugin.javapackager.displayName>
+        <plugin.javapackager.name>WebFXDemoRaytracer</plugin.javapackager.name>
+        <plugin.javapackager.displayName>WebFX Demo Raytracer</plugin.javapackager.displayName>
         <plugin.javapackager.url/>
     </properties>
 
