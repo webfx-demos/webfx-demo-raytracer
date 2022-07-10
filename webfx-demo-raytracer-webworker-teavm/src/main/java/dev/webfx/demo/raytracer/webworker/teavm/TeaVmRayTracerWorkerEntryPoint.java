@@ -1,7 +1,7 @@
 package dev.webfx.demo.raytracer.webworker.teavm;
 
 import dev.webfx.demo.raytracer.webworker.RayTracerWebWorker;
-import dev.webfx.platform.teavm.services.webworker.spi.impl.TeaVmRunningWebWorker;
+import dev.webfx.stack.platform.webworker.spi.impl.teavm.TeaVmRunningWebWorker;
 
 /**
  * @author Bruno Salmon
