@@ -4,11 +4,11 @@ module webfx.demo.raytracer.webworker {
 
     // Direct dependencies modules
     requires webfx.demo.raytracer.math;
-    requires webfx.platform.client.webassembly;
-    requires webfx.platform.shared.async;
-    requires webfx.platform.shared.json;
     requires webfx.platform.shared.util;
-    requires webfx.platform.shared.webworker;
+    requires webfx.stack.async;
+    requires webfx.stack.platform.json;
+    requires webfx.stack.platform.webassembly;
+    requires webfx.stack.platform.webworker;
 
     // Exported packages
     exports dev.webfx.demo.raytracer.webworker;

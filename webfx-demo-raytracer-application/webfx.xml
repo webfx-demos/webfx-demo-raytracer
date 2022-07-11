@@ -6,7 +6,7 @@
     </exported-packages>
 
     <providers>
-        <javafx.application.Application>dev.webfx.demo.raytracer.RayTracerApplication</javafx.application.Application>
+        <provider interface="javafx.application.Application">dev.webfx.demo.raytracer.RayTracerApplication</provider>
     </providers>
 
     <dependencies>
