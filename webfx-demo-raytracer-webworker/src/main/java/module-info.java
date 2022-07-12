@@ -4,7 +4,7 @@ module webfx.demo.raytracer.webworker {
 
     // Direct dependencies modules
     requires webfx.demo.raytracer.math;
-    requires webfx.platform.shared.util;
+    requires webfx.platform.util;
     requires webfx.stack.async;
     requires webfx.stack.platform.json;
     requires webfx.stack.platform.webassembly;
