@@ -44,7 +44,7 @@ public final class RayTracerApplication extends Application {
 
         // Creating the scene with the specified size (this size is ignored if running in the browser)
         primaryStage.setScene(new Scene(new TracerView((int) w, (int) h, new RayTracerPixelComputer()).buildView(), w, h));
-        primaryStage.setTitle("WebFx RayTracer");
+        primaryStage.setTitle("WebFX RayTracer");
         primaryStage.show();
     }
 }
