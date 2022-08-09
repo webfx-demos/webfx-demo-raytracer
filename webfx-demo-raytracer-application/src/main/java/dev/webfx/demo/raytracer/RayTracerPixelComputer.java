@@ -7,10 +7,10 @@ import dev.webfx.lib.tracerframework.TracerEngine;
 import dev.webfx.demo.raytracer.math.RayTracerMath;
 import dev.webfx.demo.raytracer.math.Views;
 import dev.webfx.demo.raytracer.webworker.RayTracerWebWorker;
-import dev.webfx.stack.platform.json.Json;
-import dev.webfx.stack.platform.json.JsonObject;
-import dev.webfx.stack.platform.json.WritableJsonArray;
-import dev.webfx.stack.platform.json.WritableJsonObject;
+import dev.webfx.platform.json.Json;
+import dev.webfx.platform.json.JsonObject;
+import dev.webfx.platform.json.WritableJsonArray;
+import dev.webfx.platform.json.WritableJsonObject;
 
 /**
  * @author Bruno Salmon
