@@ -6,7 +6,6 @@ module webfx.demo.raytracer.webworker {
     requires webfx.demo.raytracer.math;
     requires webfx.platform.async;
     requires webfx.platform.json;
-    requires webfx.platform.util;
     requires webfx.platform.webassembly;
     requires webfx.platform.webworker;
 

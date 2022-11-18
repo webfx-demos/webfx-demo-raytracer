@@ -1,13 +1,13 @@
 package dev.webfx.demo.raytracer.webworker;
 
-import dev.webfx.demo.raytracer.math.*;
+import dev.webfx.demo.raytracer.math.RayTracerMath;
+import dev.webfx.platform.async.Future;
+import dev.webfx.platform.json.Json;
+import dev.webfx.platform.json.JsonObject;
 import dev.webfx.platform.webassembly.WebAssembly;
 import dev.webfx.platform.webassembly.WebAssemblyInstance;
 import dev.webfx.platform.webassembly.WebAssemblyMemoryBufferReader;
-import dev.webfx.platform.json.Json;
-import dev.webfx.platform.json.JsonObject;
 import dev.webfx.platform.webworker.spi.base.JavaCodedWebWorkerBase;
-import dev.webfx.platform.async.Future;
 
 /**
  * @author Bruno Salmon

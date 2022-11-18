@@ -1,5 +1,7 @@
 package dev.webfx.demo.raytracer;
 
+import dev.webfx.platform.json.JsonArray;
+import dev.webfx.platform.json.JsonObject;
 import javafx.scene.paint.Color;
 import dev.webfx.lib.tracerframework.PixelComputer;
 import dev.webfx.lib.tracerframework.TracerThumbnail;
@@ -8,9 +10,7 @@ import dev.webfx.demo.raytracer.math.RayTracerMath;
 import dev.webfx.demo.raytracer.math.Views;
 import dev.webfx.demo.raytracer.webworker.RayTracerWebWorker;
 import dev.webfx.platform.json.Json;
-import dev.webfx.platform.json.JsonObject;
-import dev.webfx.platform.json.WritableJsonArray;
-import dev.webfx.platform.json.WritableJsonObject;
+import dev.webfx.platform.json.ReadOnlyJsonObject;
 
 /**
  * @author Bruno Salmon
@@ -103,8 +103,8 @@ final class RayTracerPixelComputer implements PixelComputer {
     }
 
     @Override
-    public JsonObject getLineWorkerParameters(int y, boolean firstWorkerCall) {
-        WritableJsonObject json = Json.createObject().set("cy", y);
+    public ReadOnlyJsonObject getLineWorkerParameters(int y, boolean firstWorkerCall) {
+        JsonObject json = Json.createObject().set("cy", y);
         if (firstWorkerCall) {
             json.set("width", width);
             json.set("height", height);
@@ -122,7 +122,7 @@ final class RayTracerPixelComputer implements PixelComputer {
         if (workerResult instanceof byte[])
             values = (byte[]) workerResult;
         else {
-            WritableJsonArray array = Json.createArray(workerResult);
+            JsonArray array = Json.createArray(workerResult);
             int n = array.size();
             values = new byte[n];
             for (int i = 0; i < n; i++)
