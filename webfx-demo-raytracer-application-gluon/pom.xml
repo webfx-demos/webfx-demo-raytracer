@@ -106,6 +106,7 @@
                         <list>dev/webfx/platform/meta/exe/[^/]+$</list>
                         <list>images/checkbox/[^/]+$</list>
                     </resourcesList>
+                    <appIdentifier>dev.webfx.demo.raytracer</appIdentifier>
                     <releaseConfiguration>
                         <!-- Android -->
                         <appLabel>Ray tracer</appLabel>
