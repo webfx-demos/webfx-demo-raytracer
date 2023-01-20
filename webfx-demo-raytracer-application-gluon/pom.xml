@@ -110,6 +110,7 @@
                         <!-- Android -->
                         <appLabel>Ray tracer</appLabel>
                     </releaseConfiguration>
+
                 </configuration>
             </plugin>
         </plugins>
