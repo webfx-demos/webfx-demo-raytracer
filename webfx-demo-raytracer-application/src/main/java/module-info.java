@@ -6,6 +6,7 @@ module webfx.demo.raytracer.application {
     requires javafx.graphics;
     requires webfx.demo.raytracer.math;
     requires webfx.demo.raytracer.webworker;
+    requires webfx.kit.util.scene;
     requires webfx.lib.tracerframework;
     requires webfx.platform.json;
 
