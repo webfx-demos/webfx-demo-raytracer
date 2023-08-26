@@ -106,10 +106,12 @@
                         <list>dev/webfx/lib/tracerframework/[^/]+$</list>
                         <list>dev/webfx/platform/meta/exe/[^/]+$</list>
                         <list>eu/hansolo/fx/odometer/[^/]+$</list>
-                        <list>images/checkbox/[^/]+$</list>
+                        <list>javafx/scene/control/skin/checkbox/[^/]+$</list>
                     </resourcesList>
                     <appIdentifier>dev.webfx.demo.raytracer</appIdentifier>
                     <releaseConfiguration>
+                        <!-- macOS/iOS -->
+                        <bundleName>Ray tracer</bundleName>
                         <!-- Android -->
                         <appLabel>Ray tracer</appLabel>
                     </releaseConfiguration>
