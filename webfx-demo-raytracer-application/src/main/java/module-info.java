@@ -8,7 +8,7 @@ module webfx.demo.raytracer.application {
     requires webfx.demo.raytracer.webworker;
     requires webfx.kit.util.scene;
     requires webfx.lib.tracerframework;
-    requires webfx.platform.json;
+    requires webfx.platform.ast;
 
     // Exported packages
     exports dev.webfx.demo.raytracer;

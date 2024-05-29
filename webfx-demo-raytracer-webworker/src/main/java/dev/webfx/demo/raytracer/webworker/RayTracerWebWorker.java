@@ -2,8 +2,8 @@ package dev.webfx.demo.raytracer.webworker;
 
 import dev.webfx.demo.raytracer.math.RayTracerMath;
 import dev.webfx.platform.async.Future;
-import dev.webfx.platform.json.Json;
-import dev.webfx.platform.json.JsonObject;
+import dev.webfx.platform.ast.AST;
+import dev.webfx.platform.ast.AstObject;
 import dev.webfx.platform.webassembly.WebAssembly;
 import dev.webfx.platform.webassembly.WebAssemblyInstance;
 import dev.webfx.platform.webassembly.WebAssemblyMemoryBufferReader;
@@ -33,7 +33,7 @@ public class RayTracerWebWorker extends JavaCodedWebWorkerBase {
             });
         }
         setOnMessageHandler(data -> {
-            JsonObject json = Json.createObject(data);
+            AstObject json = AST.createObject(data);
             int cy = json.getInteger("cy", 0); // TODO: fix bug returning null for 0 value in TeaVM implementation
             Integer iWidth = json.getInteger("width"); // TODO: fix json.has() not compiling with TeaVM
             boolean initFrame = iWidth != null;
